@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:rgba(0, 0, 0, 0.973);
+    font-family: 'Raleway';
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;   
+}
+
+menu{
+    grid-area: menu;   
+}
+
+aside{
+    grid-area: aside; 
+}
+
+main{
+    grid-area: main;  
+}
+
+footer{
+    grid-area: footer;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    'menu menu menu'
+    "main main main"
+    "footer footer footer";
+}
+
+.categorias{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(158, 158, 158, 0.096);
+}
+
+nav a {
+    padding: 15px;
+}
+
+a{
+ text-decoration: none;
+ font-size: 20px;
+ color: #404040 ;
+}
+
+a:hover{
+    color: white;
+}
+
+h2,p{
+    color:black;
+}
+
+h2{
+    font-size: 18px;
+}
+
+p{
+    font-size: 13px;
+}
+
+
+.btn{
+    text-align: center;
+    background-color: rgb(92, 92, 92);
+    margin: 1rem;
+    padding: 0.7rem;
+    border-radius: 0.3em;
+}
+
+.btn p{
+    color: white;
+}
+
+.btn:hover {
+    background-color: #404040;
+}
+
+.contenido{
+    display: flex;
+
+}
+
+.menu-lateral{
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    width: 15em;
+    background-color: rgba(158, 158, 158, 0.096);
+}
+
+.menu-lateral a{
+    margin: 3rem;
+    padding: 1%;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu-lateral p{
+    margin: 1em;
+    text-align: center;
+    color:#404040 ;
+}
+
+.tarjetas-productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    align-content: center;
+    grid-template-rows:auto 1fr 1fr auto;
+    /* margin: 1.5rem; */
+    
+}
+
+.tarjetas{
+    border: 2px solid rgba(158, 158, 158, 0.096);
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5em;
+    width: 90%;
+    height: 70%;
+}
+
+.tarjetas img{
+    width: 60%;
+    height: 50%;
+    margin-left: 4rem;
+    border-radius: 0.5rem;
+    margin-block: 1rem;
+
+}
+
+
+.galeria{
+    display:flex;
+    margin-left: 10rem;
+}
+
+
+footer p{
+    text-align: center;
+    font-size: 18px;
+    background-color:rgba(158, 158, 158, 0.096);
+    color: antiquewhite;
+    height: 2rem;
+}
